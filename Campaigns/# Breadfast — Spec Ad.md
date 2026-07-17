@@ -63,4 +63,4 @@ The campaign starts with coffee as the first excuse, then expands to show that B
 
 ## My Role
 
-I developed the campaign idea and wrote the script.
+I created the campaign idea and wrote the script.
