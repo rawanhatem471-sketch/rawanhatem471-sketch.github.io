@@ -50,4 +50,4 @@ The delivery guy stands there confused, slaps his forehead, and says:
 
 ## My Role
 
-I developed the campaign concept and wrote the script.
+I created the campaign concept and wrote the script.
