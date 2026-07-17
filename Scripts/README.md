@@ -1,6 +1,6 @@
 # Scripts
 
-## Script 1# Breadfast — Spec Ad.md
+## Script 1# Breadfast — Spec Ad
 
 **الأم:** قومي ذاكري، الامتحان قرب.
 
