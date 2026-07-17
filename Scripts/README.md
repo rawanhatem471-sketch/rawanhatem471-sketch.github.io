@@ -35,6 +35,7 @@
 
 **Breadfast. سريع؟ آه. بس مش للفطار بس.**
 
+[View the related campaign →](../Campaigns/%23%20Breadfast%20%E2%80%94%20Spec%20Ad.md)
 ## Script 2
 
 **Customer:** إنت جبت الفرايز بجد؟!
