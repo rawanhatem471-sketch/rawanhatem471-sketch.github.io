@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campaigns | Rawan Hatem</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+    <div id="campaigns-content"></div>
+
+    <script>
+        fetch('Campaigns.md')
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById('campaigns-content').innerHTML =
+                    marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById('campaigns-content').innerHTML =
+                    '<p>Could not load Campaigns.md</p>';
+            });
+    </script>
+
+</body>
+</html>
