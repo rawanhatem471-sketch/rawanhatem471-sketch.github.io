@@ -1,8 +1,13 @@
-# rawanhatem471-sketch
+# Rawan Hatem
+
+Content Creator & Creative Thinker
+
 ## About Me
 
 I’m a Business Information Systems Student
-,Content Creator & Creative Thinker who is passionate about developing ideas, writing scripts, and creating engaging social media content. I’m obsessed with creating advertisements and turning creative ideas into engaging campaigns that capture people’s attention. I enjoy using storytelling to connect with audiences and bring creative concepts to life.
+who is passionate about developing ideas, writing scripts, and creating engaging social media content. 
+I’m obsessed with creating advertisements and turning creative ideas into engaging campaigns that capture people’s attention. 
+I enjoy using storytelling to connect with audiences and bring creative concepts to life.
 
 ## Skills
 
