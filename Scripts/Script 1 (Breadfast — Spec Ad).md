@@ -35,5 +35,5 @@
 
 **Breadfast. سريع؟ آه. بس مش للفطار بس.**
 
-[View the related campaign →](https://github.com/rawanhatem471-sketch/rawanhatem471-sketch.github.io/blob/main/Campaigns/Breadfast%20vs.%20Talabat%20%E2%80%94%20Spec%20Ad.md)
-"
+
+[View the related campaign →](../campaign.html?file=Breadfast%20%E2%80%94%20Spec%20Ad.md)
