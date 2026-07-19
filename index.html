@@ -59,28 +59,63 @@
                     }
                 }
 
-                /* =========================
-                   MY PROJECTS
-                ========================= */
+            /* =========================
+   MY PROJECTS
+========================= */
 
-                const projectsHeading = [...content.querySelectorAll('h2')]
-                    .find(h2 => h2.textContent.trim() === 'My Projects');
+const projectsHeading = [...content.querySelectorAll('h2')]
+    .find(h2 => h2.textContent.trim() === 'My Projects');
 
-                if (projectsHeading) {
+if (projectsHeading) {
 
-                    let current = projectsHeading.nextElementSibling;
+    const projectList = document.createElement('div');
+    projectList.className = 'project-list';
 
-                    while (current) {
+    let current = projectsHeading.nextElementSibling;
 
-                        if (current.tagName === 'H3') {
+    while (current) {
 
-                            current.classList.add('project-card');
+        const next = current.nextElementSibling;
 
-                        }
+        if (current.tagName === 'H3') {
 
-                        current = current.nextElementSibling;
-                    }
-                }
+            const card = document.createElement('a');
+
+            const projectName = current.textContent.trim();
+
+            if (projectName === 'Campaigns') {
+                card.href = 'campaigns.html';
+            }
+
+            if (projectName === 'Scripts') {
+                card.href = 'scripts.html';
+            }
+
+            if (projectName === 'Creative_Ideas') {
+                card.href = 'creative-ideas.html';
+            }
+
+            card.className = 'project-card';
+
+            const title = document.createElement('span');
+            title.textContent = projectName;
+
+            const description = current.nextElementSibling;
+
+            card.appendChild(title);
+
+            if (description && description.tagName === 'P') {
+                card.appendChild(description.cloneNode(true));
+            }
+
+            projectList.appendChild(card);
+        }
+
+        current = next;
+    }
+
+    projectsHeading.after(projectList);
+}    
 
             })
             .catch(error => {
