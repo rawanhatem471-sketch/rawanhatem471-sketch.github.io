@@ -83,24 +83,22 @@ h2:has(+ h3) {
 
 /* PROJECT CARDS */
 
-h3 {
-    padding: 30px;
-    margin: 20px 0 0;
+.project-card {
+    display: block;
     background: var(--purple);
     color: white;
+    padding: 30px;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3:hover {
+.project-card:hover {
+    background: var(--purple);
+    color: white;
     transform: translateY(-8px);
     box-shadow: 10px 10px 0 var(--black);
-}
-
-h3 + p {
-    padding: 0 30px 30px;
-    margin: 0 0 25px;
-    background: white;
-    max-width: none;
 }
 
 /* HORIZONTAL LINE */
@@ -123,7 +121,7 @@ body::before {
     letter-spacing: 2px;
 }
 
-/* DECORATION ONLY — NO ANIMATION */
+/* DECORATION */
 
 body::after {
     content: "✦";
@@ -132,4 +130,47 @@ body::after {
     right: 40px;
     font-size: 60px;
     color: var(--purple);
+}
+
+/* CAMPAIGN PAGE */
+
+#content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px 100px;
+}
+
+#content h1 {
+    font-size: clamp(60px, 10vw, 130px);
+    line-height: 0.85;
+    letter-spacing: -6px;
+    margin: 30px 0 40px;
+}
+
+#content h2 {
+    margin-top: 80px;
+    font-size: 45px;
+}
+
+#content p {
+    max-width: 750px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+#content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px 0;
+}
+
+#content a {
+    color: var(--purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content a:hover {
+    background: var(--lime);
 }
