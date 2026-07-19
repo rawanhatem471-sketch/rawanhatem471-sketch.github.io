@@ -1,193 +1,292 @@
 * {
-  box-sizing: border-box;
-  }
+    box-sizing: border-box;
+}
 
 :root {
---cream: #f4f0e8;
---black: #111111;
---purple: #7447ff;
---lime: #d8ff3e;
---pink: #ff6b9d;
+    --cream: #f4f0e8;
+    --black: #111111;
+    --purple: #7447ff;
+    --lime: #d8ff3e;
+    --pink: #ff6b9d;
 }
 
 body {
-margin: 0;
-background: var(--cream);
-color: var(--black);
-font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--cream);
+    color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* =========================
-HOME PAGE
+   HOME PAGE
 ========================= */
 
 #readme-content {
-max-width: 1200px;
-margin: auto;
-padding: 60px 40px 100px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px 100px;
 }
 
 #readme-content h1 {
-font-size: clamp(65px, 12vw, 150px);
-line-height: 0.85;
-letter-spacing: -8px;
-max-width: 900px;
-margin: 30px 0 20px;
-font-weight: 900;
+    font-size: clamp(65px, 12vw, 150px);
+    line-height: 0.85;
+    letter-spacing: -8px;
+    max-width: 900px;
+    margin: 30px 0 20px;
+    font-weight: 900;
 }
 
 #readme-content h1 + p {
-font-size: 24px;
-font-weight: bold;
-margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 80px;
 }
 
 #readme-content p {
-max-width: 750px;
-font-size: 18px;
-line-height: 1.7;
+    max-width: 750px;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 #readme-content h2 {
-margin-top: 110px;
-margin-bottom: 35px;
-font-size: 55px;
-letter-spacing: -3px;
-text-transform: uppercase;
+    margin-top: 110px;
+    margin-bottom: 35px;
+    font-size: 55px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
 }
 
-/* =========================
-SKILLS
-========================= */
+/* SKILLS */
 
 .skills-list {
-list-style: none;
-padding: 0;
-margin: 0;
-max-width: 900px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 900px;
 
-```
-display: flex;
-flex-wrap: wrap;
-gap: 12px;
-```
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .skills-list li {
-background: white;
-border: 2px solid var(--black);
-padding: 10px 16px;
-font-size: 15px;
-font-weight: bold;
+    background: white;
+    border: 2px solid var(--black);
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-/* =========================
-MY PROJECTS
-========================= */
+/* PROJECT CARDS */
 
 .project-list {
-max-width: 900px;
+    max-width: 900px;
 }
 
 .project-card {
-display: block;
-background: var(--purple);
-color: white;
-padding: 30px;
-margin: 20px 0;
-font-size: 28px;
-font-weight: bold;
-text-decoration: none;
+    display: block;
+    background: var(--purple);
+    color: white !important;
+    padding: 30px;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
 
-```
-transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-```
-
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-background: var(--purple);
-color: white;
-transform: translateY(-8px);
-box-shadow: 10px 10px 0 var(--black);
+    background: var(--purple) !important;
+    color: white !important;
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 0 var(--black);
+}
+
+/* HOME DECORATION */
+
+.home-page::before {
+    content: "IDEAS / WORDS / ADS";
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home-page::after {
+    content: "✦";
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 60px;
+    color: var(--purple);
 }
 
 /* =========================
-GENERAL LINKS
+   CAMPAIGNS PAGE
 ========================= */
 
-a {
-font-weight: bold;
+.campaigns-page {
+    padding: 60px 40px 100px;
 }
 
-a:hover {
-background: var(--lime);
+.campaigns-page h1 {
+    font-size: clamp(65px, 12vw, 150px);
+    line-height: 0.85;
+    letter-spacing: -8px;
+    max-width: 1000px;
+    margin: 30px 0 25px;
+    font-weight: 900;
+}
+
+.campaigns-page h1 + p {
+    max-width: 750px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.campaigns-page h2 {
+    font-size: 45px;
+    letter-spacing: -3px;
+    margin: 50px 0 30px;
+}
+
+.campaigns-page ul {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+}
+
+.campaigns-page li {
+    margin: 20px 0;
+}
+
+.campaigns-page li a {
+    display: block;
+    background: var(--purple);
+    color: white;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.campaigns-page li a:hover {
+    background: var(--purple);
+    color: white;
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 0 var(--black);
+}
+
+.campaigns-page > a {
+    display: inline-block;
+    margin-top: 70px;
+    color: var(--purple);
+    font-weight: bold;
+    border-bottom: 3px solid var(--purple);
+    padding-bottom: 5px;
 }
 
 /* =========================
-HORIZONTAL LINE
+   CAMPAIGN DETAILS PAGE
 ========================= */
 
-hr {
-border: none;
-border-top: 3px solid var(--black);
-margin: 70px 0;
+#content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px 100px;
+}
+
+#content h1 {
+    font-size: clamp(60px, 10vw, 130px);
+    line-height: 0.85;
+    letter-spacing: -6px;
+    max-width: 1000px;
+    margin: 30px 0 80px;
+    font-weight: 900;
+}
+
+#content h2 {
+    font-size: 42px;
+    letter-spacing: -2px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#content p {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+#content h3 {
+    display: inline-block;
+    background: var(--purple);
+    color: white;
+    padding: 20px 30px;
+    font-size: 32px;
+    margin: 10px 0 30px;
+}
+
+#content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px 0;
+}
+
+#content a {
+    color: var(--purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content a:hover {
+    background: var(--lime);
 }
 
 /* =========================
-DECORATION
-========================= */
-
-body::before {
-content: "IDEAS / WORDS / ADS";
-position: fixed;
-top: 20px;
-right: 30px;
-font-size: 12px;
-font-weight: bold;
-letter-spacing: 2px;
-}
-
-body::after {
-content: "✦";
-position: fixed;
-bottom: 30px;
-right: 40px;
-font-size: 60px;
-color: var(--purple);
-}
-
-/* =========================
-MOBILE
+   MOBILE
 ========================= */
 
 @media (max-width: 600px) {
 
-```
-#readme-content {
-    padding: 40px 20px 80px;
-}
+    #readme-content,
+    .campaigns-page,
+    #content {
+        padding: 40px 20px 80px;
+    }
 
-#readme-content h1 {
-    font-size: 65px;
-    letter-spacing: -4px;
-}
+    #readme-content h1,
+    .campaigns-page h1,
+    #content h1 {
+        font-size: 65px;
+        letter-spacing: -4px;
+    }
 
-#readme-content h2 {
-    font-size: 40px;
-}
+    .project-card,
+    .campaigns-page li a {
+        font-size: 22px;
+        padding: 24px;
+    }
 
-.project-card {
-    font-size: 22px;
-    padding: 24px;
-}
+    #content h2 {
+        font-size: 32px;
+    }
 
-.skills-list li {
-    font-size: 14px;
-}
-```
-
+    #content p {
+        font-size: 16px;
+    }
 }
